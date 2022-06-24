@@ -1,12 +1,97 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color:#000000;
+}
 
+.page{
+  height:100%;
+  width:100%;
+  position:relative;
+  display:flex;
+  align-items:center;
+  align-content: center;
+  flex-direction:column;
+  padding:20px;
+  padding-top:70px;
+  background:#bdbdbdb8;
+}
+
+.card{
+  position: relative;
+  background: rgb(255, 255, 255);
+  max-width: 600px;
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 5px rgb(0 0 0 / 10%);
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+#stephane-picture{
+  position:absolute;
+  border-radius: 50%;
+  border:5px solid white;
+  height:100px;
+  width:100px;
+  top:-50px;
+  left:calc(50% - 50px);
+}
+
+#fullname{
+  margin-top: 2em;
+}
+
+#job{
+  color:darkgrey;
+  margin-bottom: 1em;
+}
+
+p{
+  margin-bottom: 2em;
+  display:block;
+  margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.button{
+  background:rgb(189, 178, 204);
+  padding:10px 20px;
+  margin:1em;
+  border-radius:5px;
+  text-decoration: none;
+}
 
 .divider{
   background: repeating-linear-gradient(315deg, rgba(255, 255, 255, 0),#ffffff00 6px, #afa8a8 0,#c6ccc5 10px);
   height:12px;
-  margin:1em auto;
-  
+  margin:1.5em auto;  
 }
 
+h3{
+  margin-bottom: 2em;
+}
+
+img{
+  width:45px;
+}
+
+.skills{
+  display:flex;
+  justify-content: space-around;
+}
+
+.logo{
+  display:flex;
+  align-items:center;
+  gap:0.8em;
+  margin-bottom: 1em;
+}
 .thumbnail {
   display: inline-block;
   border-radius: 11px;
@@ -35,12 +120,13 @@
 .thumbnail .thumbnail-content {
   position: relative;
   padding: 20px;
-  background: white;
+  background: rgb(255,255,255);
   min-height: 120px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   box-sizing: border-box;
   padding-bottom: 40px;
+  /* height: 150px; permet de définir la hauteur du commentaire en blanc. Dans le but d'avoir des cartes de même dimension*/
 }
 
 .thumbnail .badge {
@@ -75,4 +161,9 @@
   text-align: right;
   bottom: 10px;
   right: 10px;
+}
+
+.experience{
+  text-align: start;
+  padding: 0 2em;
 }
