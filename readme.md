@@ -1,0 +1,1 @@
+This is my portfolio. I used only HTML and CSS to make it. It's only a simple exercice.
